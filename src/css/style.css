@@ -1,0 +1,82 @@
+.search-box{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 100;
+}
+.search-button{
+    -fx-background-color: #232424FF;
+    -fx-background-radius: 30;
+    -fx-font-family: Cambria;
+    -fx-font-size: 16;
+}
+.left-bar{
+    -fx-background-color: rgb(39, 41, 42);
+}
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.3),10.0,0.0,0.0,10.0);
+}
+.visualizza-button{
+    -fx-background-color: #232424;
+    -fx-background-radius: 30;
+    -fx-font-family: Cambria;
+    -fx-font-size: 18;
+}
+.scelta-progetto{
+    -fx-background-color: #999999;
+    -fx-background-radius: 30;
+}
+.filtro-button{
+    -fx-background-color: #232424FF;
+    -fx-background-radius: 30;
+    -fx-font-family: Cambria;
+    -fx-font-size: 22;
+}
+.chart-legend {
+    -fx-background-color: #929090;
+    -fx-background-radius: 30;
+}
+.panel-back{
+    -fx-background-color: #414040;
+}
+.trasparent{
+    -fx-background-color:transparent;
+}
+.info-box{
+    -fx-background-color: #232424FF;
+    -fx-background-radius: 20;
+    -fx-font-family: Cambria;
+}
+.info-add-box{
+    -fx-background-color: #929090;
+    -fx-background-radius: 2;
+    -fx-font-size: 20;
+    -fx-font-family: Cambria;
+}
+
+.inserisciRuoli-button{
+    -fx-background-color: #0026e7;
+    -fx-background-radius: 30;
+}
+.upper-bar {
+    -fx-background-color: #232424FF;
+}
+.box {
+    -fx-border-color: #000000; /* Colore del bordo */
+    -fx-border-radius: 20;
+    -fx-border-width: 1px; /* Spessore del bordo */
+    -fx-alignment: top-right; /* Allineamento del contenuto al centro */
+}
+
+.selected-Box{
+    -fx-background-radius: 20;
+    -fx-background-color: rgba(5, 252, 248, 0.76);
+    -fx-border-width: 1px; /* Spessore del bordo */
+}
+.right-barStileFormato {
+    -fx-background-color: #2e2d2d;
+    -fx-border-radius: 10;
+}
+.menu-button{
+    -fx-background-color: #f27209;
+    -fx-background-radius: 30;
+    -fx-font-family: Cambria;
+}

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ModuleDipendentiRuoli.ControllerSettingDipendentiRuoli">
+   <children>
+      <VBox layoutX="80.0" layoutY="156.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="321.0" prefWidth="800.0">
+               <children>
+                  <TableView fx:id="unitaTable" prefHeight="267.0" prefWidth="270.0" styleClass="shadow" stylesheets="@../css/style.css" HBox.hgrow="ALWAYS">
+                    <columns>
+                      <TableColumn fx:id="nomeUnitaColumn" prefWidth="228.79998815059662" text="Nome unita" />
+                        <TableColumn fx:id="selectedUnitaColumn" minWidth="0.0" prefWidth="76.800048828125" text="Selezionato" />
+                    </columns>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </TableView>
+                  <VBox alignment="CENTER" prefHeight="275.0" prefWidth="123.0" stylesheets="@../css/style.css" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="7.0" right="7.0" top="7.0" />
+                     </HBox.margin>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dipendente selezionato" textAlignment="CENTER" wrappingWidth="203.58305549621582" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="Cambria" size="17.0" />
+                           </font>
+                        </Text>
+                        <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="241.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nome e cognome:" wrappingWidth="81">
+                                 <HBox.margin>
+                                    <Insets left="3.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Label fx:id="nameDipendenteLabel" alignment="CENTER" prefHeight="55.0" prefWidth="231.0" textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font name="Cambria" size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="251.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ruolo:" wrappingWidth="53.1831169128418">
+                                 <HBox.margin>
+                                    <Insets left="3.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Label fx:id="ruoloSelectedLabel" alignment="CENTER" prefHeight="114.0" prefWidth="282.0" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Cambria" size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="82.0" prefWidth="251.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Unita alla quale è associato:" wrappingWidth="81.98313903808594">
+                                 <HBox.margin>
+                                    <Insets left="3.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Cambria" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Label fx:id="selectedUnitaLabel" prefHeight="88.0" prefWidth="172.0" textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font name="Cambria" size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Button mnemonicParsing="false" onMousePressed="#associaInfoAlDipendente" prefHeight="39.0" prefWidth="174.0" styleClass="search-button" stylesheets="@../css/style.css" text="Associa al dipendente" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <styleClass>
+                        <String fx:value="chart-legend" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </VBox>
+                  <TableView fx:id="ruoliUnitaTable" prefHeight="287.0" prefWidth="282.0" styleClass="shadow" stylesheets="@../css/style.css">
+                     <columns>
+                        <TableColumn fx:id="ruoliUnitaColumn" prefWidth="203.99994504451752" text="Ruoli dell'unità" />
+                        <TableColumn fx:id="selectRuoloColumn" prefWidth="77.60009765625" text="Selezionato" />
+                     </columns>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </TableView>
+               </children>
+            </HBox>
+            <TableView fx:id="dependentTableView" fixedCellSize="0.0" prefHeight="365.0" prefWidth="862.0" styleClass="shadow" stylesheets="@../css/style.css">
+              <columns>
+                <TableColumn fx:id="idTableColumn" prefWidth="43.99997216463089" text="ID" />
+                <TableColumn fx:id="nomeDependentColumn" prefWidth="196.00001907348633" text="Nome Cognome" />
+                  <TableColumn fx:id="unitaTableColumn" minWidth="0.0" prefWidth="296.8000030517578" text="Unita associata" />
+                  <TableColumn fx:id="ruoliTableColumn" minWidth="0.0" prefWidth="265.60003662109375" text="Ruoli" />
+                  <TableColumn fx:id="selectedColumn" prefWidth="74.39990234375" text="Selezionato" />
+              </columns>
+               <VBox.margin>
+                  <Insets bottom="25.0" left="10.0" right="10.0" top="25.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

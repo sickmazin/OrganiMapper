@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMousePressed="#clickForChoseModel" prefHeight="215.0" prefWidth="225.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ModuloCreationGui.ModelPreviewController">
+   <children>
+      <VBox alignment="CENTER" layoutX="13.0" layoutY="14.0" prefHeight="201.0" prefWidth="212.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="modelloLabel" alignment="CENTER" prefHeight="55.0" prefWidth="214.0" styleClass="box-name" stylesheets="@../css/style.css" text="Modello di organigramma " textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Cambria Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgModel" fitHeight="136.0" fitWidth="212.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/img/modello_funzionale.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="chart-legend" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>
